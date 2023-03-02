@@ -5,6 +5,6 @@ Neste repositório será depositadas todas as soluções das fichas de exercíci
 Professores:
 
 - Mário Pinto ([mariopinto@esmad.ipp.pt](mailto:mariopinto@esmad.ipp.pt))
-- Miguel Ferreira (correiaferreira@esmad.ipp.pt)
-- Ricardo Queirós (ricardoqueiros@esmad.ipp.pt)
+- Miguel Ferreira ([correiaferreira@esmad.ipp.pt](mailto:correiaferreira@esmad.ipp.pt))
+- Ricardo Queirós ([ricardoqueiros@esmad.ipp.pt](mailto:ricardoqueiros@esmad.ipp.pt)) 
     
