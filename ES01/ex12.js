@@ -18,7 +18,7 @@ do {
   }
   numberAttempts += 1;
   if (numberAttempts === maxNumberAttempts) {
-    console.log(`Your exceeded the maximum number of attempts. You lost, the number was: ${num}.`);
+    console.log(`Exceeded the maximum number of attempts. You lost, the number was: ${num}.`);
     break;
   }
 } while (guessingNum !== num);
