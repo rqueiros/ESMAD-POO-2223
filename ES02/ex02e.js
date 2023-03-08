@@ -3,7 +3,7 @@ function echo(s, n) {
   for (let i = 0; i < n; i += 1) {
     result += s;
   }
-  alert(result);
+  console.log(result);
 }
 
 echo('ESMAD', 3);

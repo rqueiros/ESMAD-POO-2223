@@ -3,7 +3,7 @@ function showNumbers(a, b) {
   for (let i = a; i < b; i += 1) {
     result += i;
   }
-  alert(result);
+  console.log(result);
 }
 
 const a = +prompt('Enter the first number');

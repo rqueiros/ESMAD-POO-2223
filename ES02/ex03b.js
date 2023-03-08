@@ -11,4 +11,4 @@ function pow(x, n) {
 const base = +prompt('Enter the base');
 const exponent = +prompt('Enter the exponent');
 
-alert(pow(base, exponent));
+console.log(pow(base, exponent));

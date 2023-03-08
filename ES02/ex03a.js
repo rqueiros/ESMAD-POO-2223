@@ -5,6 +5,6 @@ function min(num1, num2) {
   return num2;
 }
 
-alert(min(2, 5));
-alert(min(3, -1));
-alert(min(1, 1));
+console.log(min(2, 5));
+console.log(min(3, -1));
+console.log(min(1, 1));

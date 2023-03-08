@@ -3,7 +3,7 @@ function showMultiples(a, b) {
   for (let i = a; i <= b; i += 1) {
     if (i % 3 === 0) result += i;
   }
-  alert(result);
+  console.log(result);
 }
 
 const a = +prompt('Enter the first number');
