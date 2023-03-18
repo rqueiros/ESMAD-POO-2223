@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex03</title>
+  <link rel="stylesheet" href="ex03.css">
+</head>
+<body>
+  <div>
+    <form action="ex03.html">
+      <div>
+        <label for="txtGameName">Name</label>
+        <input name="txtGameName" id="txtGameName" type="text" required>
+      </div>
+      <div>
+        <label for="txtGameYear">Year</label>
+        <input name="txtGameYear" id="txtGameYear" type="number" required>
+      </div>
+      <div>
+        <label for="sltGameGenre">Genre</label>
+        <select name="sltGameGenre" id="sltGameGenre">
+          <option value="action">Action</option>
+          <option value="adventure">Adventure</option>
+          <option value="strategy">Strategy</option>
+          <option value="sports" selected>Sports</option>
+          <option value="simulation">Simulation</option>
+        </select>
+      </div>
+      <div>
+        <label for="urlGameCover">Cover</label>
+        <input name="urlGameCover" id="urlGameCover" type="url">
+      </div>
+      <input type="submit" value="Add">
+      <input type="reset" value="Reset">
+    </form>
+  </div>
+  <hr>
+  <div>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Year</th>
+        <th>Genre</th>
+        <th>Cover</th>
+        <th>Options</th>
+      </tr>
+    </table>
+  </div>
+  <script src="ex03.js"></script>
+</body>
+</html>

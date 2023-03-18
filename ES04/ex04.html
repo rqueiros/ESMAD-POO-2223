@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex04</title>
+  <link rel="stylesheet" href="ex04.css">
+</head>
+<body>
+  <h1>WevDev Tech Talk</h1>
+  <div>
+    <form action="ex04.html">
+      <div>
+        <label for="txtName">Name</label>
+        <input name="txtName" id="txtName" type="text" required>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Course:</legend>
+          <div>
+            <input type="radio" id="tsiw" name="course" value="tsiw" checked>
+            <label for="tsiw">TSIW</label>
+          </div>
+          <div>
+            <input type="radio" id="multimedia" name="course" value="multimedia">
+            <label for="multimedia">Multimedia</label>
+          </div>
+          <div>
+            <input type="radio" id="tcav" name="course" value="tcav">
+            <label for="tcav">TCAV</label>
+          </div>
+          <div>
+            <input type="radio" id="design" name="course" value="design">
+            <label for="design">Design</label>
+          </div>
+          <div>
+            <input type="radio" id="photography" name="course" value="photography">
+            <label for="design">Photography</label>
+          </div>
+        </fieldset>
+      </div>
+      <div>
+        <label for="sltProfile">Profile</label>
+        <select name="sltProfile" id="sltProfile">
+          <option value="student" selected>Student</option>
+          <option value="teacher">Teacher</option>
+          <option value="employee">Employee</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Session</legend>
+          <div>
+            <input type="checkbox" id="morningSession" name="morningSession" class="sessionCheckbox">
+            <label for="morning">Morning</label>
+          </div>
+          <div>
+            <input type="checkbox" id="afternoonSession" name="morningSession" class="sessionCheckbox">
+            <label for="afternoon">Afternoon</label>
+          </div>
+        </fieldset>
+      </div>
+      <input type="submit" value="Add">
+      <input type="button" value="Count">
+    </form>
+  </div>
+  <hr>
+  <div>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Profile</th>
+        <th>Session</th>
+      </tr>
+    </table>
+  </div>
+  <script src="ex04.js"></script>
+</body>
+</html>
