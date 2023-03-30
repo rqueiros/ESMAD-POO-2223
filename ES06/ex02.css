@@ -1,0 +1,10 @@
+div {
+  margin-bottom: 4px;
+}
+table {
+  border: 2px solid;
+  margin-top: 20px;
+}
+tr {
+  border-bottom: 1px solid;
+}

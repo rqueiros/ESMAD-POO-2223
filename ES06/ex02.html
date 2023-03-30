@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex02</title>
+  <link rel="stylesheet" href="ex02.css">
+</head>
+<body>
+
+  <h1>Movies Manager</h1>
+  <form id="addForm">
+    <fieldset>
+      <legend>Add Movie</legend>
+      <div>
+        <label for="addTitle">Title</label>
+        <input type="text" name="addTitle" id="addTitle" required>
+      </div>
+      <div>
+        <label for="addGenre">Genre</label>
+        <select id="addGenre">
+          <option>adventure</option>
+          <option>action</option>
+          <option>comedy</option>
+          <option>horror</option>
+          <option>romance</option>
+          <option>thriller</option>
+          <option>other</option>
+        </select>
+      </div>
+      <div>
+        <label for="addYear">Year</label>
+        <input type="number" min="1900" max="2022" name="addYear" id="addYear" required>
+      </div>
+      <div>
+        <label for="addCover">Cover</label>
+        <input required type="url" name="addCover" id="addCover">
+      </div>
+      <div>
+        <label for="addTrailer">Trailer</label>
+        <input type="url" name="addTrailer" id="addTrailer">
+      </div>
+      <div>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+      </div>
+    </fieldset>
+  </form>
+
+  <table>
+    <thead>
+      <th>Title</th>
+      <th>Genre</th>
+      <th>Options</th>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <dialog id="dialogTrailer">
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+  </dialog>
+
+  <dialog id="dialogCover">
+    <img src="" alt="">
+  </dialog>
+
+  <script src="ex02.js"></script>
+</body>
+</html>
