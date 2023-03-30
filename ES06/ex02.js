@@ -60,8 +60,8 @@ const openCover = (src) => {
   dialogCover.showModal();
 };
 
-const addMovie = (e) => {
-  e.preventDefault();
+const addMovie = (event) => {
+  event.preventDefault();
   const newMovie = {
     title: addTitle.value,
     genre: addGenre.value,
@@ -76,6 +76,7 @@ const addMovie = (e) => {
   movies.push(newMovie);
   buildTable();
   console.log(movies);
+  addForm.reset();
   return true;
 };
 addForm.addEventListener('submit', addMovie);
