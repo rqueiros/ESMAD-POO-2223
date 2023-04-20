@@ -1,0 +1,11 @@
+DESAFIO NA CRIAÇÃO DE UM ESCAPE ROOM
+
+Crie um ER (caixa branca) que tenha um livro (caixa castanha) e uma porta (caixa vermelha).
+
+- Ao clicar no livro deve surgir uma janela com uma questão aleatoria de escolha multipla.
+- Ao acertar na questão deve surgir um alerta com o texto "PARABÉNS, GANHASTE UMA CHAVE" e uma chave (caixa amarela) deve surgir por cima do livro. Caso contrário, deve surgir um alerta com o texto "FALHASTE, TENTA NOVAMENTE
+- Ao clicar na porta esta deve passar a cor verde se a chave já estiver visivel e um alerta deve surgir com o texto "SAISTE DO ER!!". Caso contrário, deve surgir um alerta com o texto "ENCONTRA PRIMEIRO A CHAVE!!"
+
+Notas:
+- Use o elemento dialog do HTML 5.2
+- As questões devem estar num array de objetos. Crie pelo menos 3 questões
