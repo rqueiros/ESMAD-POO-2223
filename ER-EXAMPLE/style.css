@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.room {
+  width: 500px;
+  height: 500px;
+  border: 10px solid #000;
+  position: relative;
+  margin: 50px auto;
+}
+
+.door {
+  width: 100px;
+  height: 200px;
+  background: red;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.book {
+  width: 50px;
+  height: 50px;
+  background: rgb(76, 62, 62);
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+  z-index: 2;
+}
+
+.key {
+  width: 30px;
+  height: 30px;
+  background: #f90;
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(100%, 100%);
+  z-index: 3;
+  display: none;
+}
+
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #f90;
+  width: 400px;
+  height: 200px;
+  z-index: 999;
+}
