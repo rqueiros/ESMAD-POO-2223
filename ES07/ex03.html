@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex03</title>
+    <link rel="stylesheet" href="ex03.css">
+</head>
+
+<body>
+
+    <h1>Movies Manager</h1>
+
+    <div id="mainForms">
+        <div id="movieFormContainer">
+            <form id="movieForm">
+                <fieldset>
+                    <legend>Add Movie</legend>
+                    <div>
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    <div>
+                        <label for="yearOfRelease">Year of Release:</label>
+                        <input type="number" id="yearOfRelease" name="yearOfRelease" required>
+                    </div>
+                    <div>
+                        <label for="director">Director:</label>
+                        <select id="director" name="director"></select>
+                    </div>
+                    <div>
+                        <label for="duration">Duration (in minutes):</label>
+                        <input type="number" id="duration" name="duration" required>
+                    </div>
+                    <div>
+                        <label for="actors">Actors (separated by commas):</label>
+                        <input type="text" id="actors" name="actors" required>
+                    </div>
+                    <input type="submit" value="Create Movie">
+                </fieldset>
+            </form>
+        </div>
+        <div id="directorFormContainer">
+            <form id="directorForm">
+                <fieldset>
+                    <legend>Create Director</legend>
+                    <div>
+                        <label for="directorName">Name:</label>
+                        <input type="text" id="directorName" name="directorName" required>
+                    </div>
+                    <div>
+                        <label for="directorDOB">Date of Birth:</label>
+                        <input type="date" id="directorDOB" name="directorDOB" required>
+                    </div>
+                    <div>
+                        <label for="directorCountry">Country:</label>
+                        <input type="text" id="directorCountry" name="directorCountry" required>
+                    </div>
+                    <input type="submit" value="Create Director">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="functionsFormContainer">
+        <form id="functionsForm">
+            <fieldset>
+                <legend>Functions</legend>
+                <div>
+                    <button type="button" onclick="searchDirectorMovies()">All Films By Director:</button>
+                    <input type="text" id="txtSearchDirectorMovies" name="txtSearchDirectorMovies">
+                </div>
+                <div>
+                    <button type="button" onclick="searchActorMovies()">All Films With Actor:</button>
+                    <input type="text" id="txtSearchActorMovies" name="txtSearchActorMovies">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <table>
+        <thead>
+          <th>Title</th>
+          <th>Director</th>
+          <th>Actors</th>
+          <th>Year</th>
+          <th>Duration</th>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+
+    <script src="ex03.js"></script>
+</body>
+
+</html>

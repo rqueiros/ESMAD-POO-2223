@@ -1,0 +1,25 @@
+div {
+    margin-bottom: 4px;
+}
+
+#mainForms {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+#directorFormContainer, #directorForm {
+    display: grid;
+}
+
+#directorForm > fieldset {
+    align-self: stretch;
+}
+
+table {
+    border: 2px solid;
+    margin-top: 20px;
+}
+
+tr {
+    border-bottom: 1px solid;
+}
