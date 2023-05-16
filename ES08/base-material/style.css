@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+form {
+  padding: 10px;
+}
+h1 {
+  color: #1a2d45;
+  padding-left: 10px;
+}
+h2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 100%;
+}
+hr {
+  border-style: solid;
+  color: #1a2d45;
+  margin-top: 30px;
+}
+#container {
+  background-color: #e9fbff;
+  min-height: 90vh;
+  width: 940px;
+}
+#escape-room-container {
+  background-color: #cedee1;
+  margin-left: 10px;
+  margin-right: 10px;
+  min-height: 300px;
+}
+#escape-rooms-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#escape-room-title {
+  background-color: #b6ced2;
+  font-size: 1.2em;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.escape-room {
+  align-items: center;
+  background-color: #1a2d45;
+  background-size: cover;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 300px;
+}
+.escape-room:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.puzzle-solved {
+  float: right;
+  font-size: 1.4em;
+}
