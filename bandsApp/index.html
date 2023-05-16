@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MyMusic</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- REFERÊNCIA AO CSS DO BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  </head>
+
+  <body style="padding-top: 85px;">
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <nav class="navbar navbar-expand-md bg-dark fixed-top"></nav>
+
+    <!-- container principal -->
+    <div class="container-fluid">
+      <!--  jumbotron  qu neste exemplo contém titulos, formulário e cards -->
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-3">Bands Catalog</h1>
+          <p class="lead">The best bands of the world!</p>
+          <hr class="my-2" />
+          <!-- catálogo - formulário -->
+          <form class="form-inline">
+            <div class="row g-3">
+            <div class="col-sm-5">
+              <div class="form-group">                
+                <select class="form-control m-2" name="" id="sltGenre">
+                  <option value="">All genres</option>
+                  <option value="Pop-Rock">Pop-Rock</option>
+                  <option value="Metal">Metal</option>
+                  <option value="Jazz">Jazz</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-3">
+            <div class="form-group m-2">                
+              <input id="txtBand" type="text" placeholder="band's name" class="form-control m-2" />
+            </div>
+            </div>
+            <div class="col-sm-4">
+            <button id="btnFilter" type="button" class="btn btn-primary">
+              FILTER
+            </button>
+            <button id="btnSort" type="button" class="btn btn-primary m-2">
+              SORT
+            </button>
+            </div>
+            </div>
+            
+          </form>
+          <!-- CATÁLOGO: EXIBIÇÃO DAS BANDAS (VAZIO INICIALMENTE) -->
+          <hr class="my-2" />
+          <p>
+            <div id="myCatalog" class="row row-cols-3" >
+              
+            </div>
+          </p>
+        </div>
+      </div>
+      <!-- Junbotron -->
+    </div>
+    <!--  Container principal -->
+
+    <!-- Modal de login -->
+    <div class="modal fade" id="mdlLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form id="frmLogin">
+      <div class="modal-body">        
+        <div class="form-group">
+          <label for="txtUsername">Username</label>
+          <input
+            type="text"
+            class="form-control"
+            id="txtUsername"
+            placeholder="Enter username"
+          />
+        </div>
+        <div class="form-group">
+          <label for="txtPassword">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="txtPassword"
+             placeholder="Enter password"
+          />
+        </div>
+</div>
+<div class="modal-footer">
+  <button type="submit" class="btn btn-secondary">Login</button>
+  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+</div>
+</form>
+<div class="row">
+      <div class="col">
+        <div id="msgLogin"></div>
+      </div>
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+ 
+    <!-- Modal de Register -->
+     <div class="modal fade" id="mdlRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+       <form id="frmRegister">
+          <div class="modal-body">
+              <div class="form-group">
+                <label for="txtUsernameRegister">Username</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtUsernameRegister"
+                  placeholder="Enter username"
+                />
+              </div>
+              <div class="form-group">
+                <label for="txtPasswordRegister">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="txtPasswordRegister"
+                  placeholder="Enter password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="txtPasswordRegister2">Confirm Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="txtPasswordRegister2"
+                  placeholder="Enter password"
+                />
+              </div>             
+              </div>
+              <div class="modal-footer">
+  <button type="submit" class="btn btn-secondary">Register</button>
+  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+</div>
+            </form>
+<div class="row">
+      <div class="col">
+        <div id="msgRegister"></div>
+      </div>
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+    <!-- Modal -->
+
+    <!-- REFERÊNCIA AOS JS -->
+    <script src="./js/init.js"></script>
+    <script type="module" src="./js/views/NavbarView.js"></script>
+    <script type="module" src="./js/views/BandCatalogView.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>
+t
